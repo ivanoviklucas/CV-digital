@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100%;
+  padding: 60px 80px;
+  font-family: "Poppins", sans-serif;
+  background-color: #0d1b2a;
+  color: #ffffff;
+}
+
+/* Estilo general de secciones */
+header,
+#contacto,
+#capasitacion,
+#experiencia,
+#sobre-mi {
+  background-color: #1b263b;
+  color: #f5f5f5;
+  padding: 60px 40px;
+  text-align: center;
+  border-radius: 12px;
+  margin: 40px auto;
+  max-width: 900px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  transition: background-color 0.3s ease;
+}
+
+header {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+header p {
+  color: #e6af2e;
+}
+.contenedor-avatar {
+  margin-left: 20px;
+  transform: translateX(20px);
+}
+
+.contenedor-avatar .img-avatar {
+  width: 200px;
+  height: 200px;
+}
+
+/* Títulos de secciones */
+#sobre-mi h2,
+#capasitacion h2,
+#experiencia h2 {
+  font-size: 2.2rem;
+  margin-bottom: 30px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  border-bottom: 2px solid #f5f5f5;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+#capasitacion .tarjeta:nth-child(2) h3 {
+  color: #e6af2e;
+}
+#capasitacion .tarjeta:nth-child(3) h3 {
+  color: #e6af2e;
+}
+#experiencia .tarjeta:nth-child(4) h3 {
+  color: #e6af2e;
+}
+
+/* Texto del "Sobre mí" */
+#sobre-mi p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #dcdcdc;
+  text-align: justify;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Layout del header y contacto */
+#contacto {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+#contacto {
+  background-color: #0d1b2a;
+  text-align: center;
+}
+
+#contacto img {
+  width: 80px;
+  height: 80px;
+}
+
+/* Layout para las secciones con tarjetas */
+#capasitacion,
+#experiencia {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Tarjetas */
+.tarjeta {
+  flex: 1 1 calc(33.33% - 20px);
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Título dentro de la tarjeta */
+.tarjeta h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #ffffff;
+  border-left: 4px solid #ffffff30;
+  padding-left: 10px;
+}
+
+/* Descripción en las tarjetas */
+.tarjeta p {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #dcdcdc;
+}
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .contenedor-avatar {
+    margin-left: 0;
+    transform: none;
+  }
+
+  .contenedor-avatar .img-avatar {
+    width: 150px;
+    height: 150px;
+  }
+
+  #contacto {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  #capasitacion,
+  #experiencia {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .tarjeta {
+    flex: 1 1 100%;
+    width: 100%;
+  }
+
+  #sobre-mi p {
+    font-size: 1rem;
+    padding: 0 10px;
+  }
+
+  #sobre-mi h2,
+  #capasitacion h2,
+  #experiencia h2 {
+    font-size: 1.6rem;
+  }
+}
