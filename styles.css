@@ -141,6 +141,7 @@ header p {
   line-height: 1.5;
   color: #dcdcdc;
 }
+
 @media (max-width: 768px) {
   body {
     padding: 20px;
@@ -189,4 +190,8 @@ header p {
   #experiencia h2 {
     font-size: 1.6rem;
   }
+}
+
+#capasitacion .tarjeta:nth-child(3) h3 {
+  color: #e6af2e !important;
 }

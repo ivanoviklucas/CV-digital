@@ -65,24 +65,36 @@ function generadorTarjetas() {
     const titulo = document.createElement("h3");
     titulo.textContent = element.titulo;
     if (element.titulo === "Curso de Desarrollo Web") {
-      tarjeta.addEventListener("click", () => {
-        Swal.fire({
-          imageUrl: "imagenes/certificado-desarrollo-web.png",
-          imageWidth: 500,
-          imageAlt: "Certificado del curso",
-          showConfirmButton: false,
-        });
-      });
-    } else if (element.titulo === "Curso de JavaScript") {
-      tarjeta.addEventListener("click", () => {
-        Swal.fire({
-          imageUrl: "imagenes/certificado javaScript.png",
-          imageWidth: 500,
-          imageAlt: "Certificado del curso",
-          showConfirmButton: false,
-        });
-      });
-    }
+  tarjeta.addEventListener("click", () => {
+    Swal.fire({
+      imageUrl: "imagenes/certificado-desarrollo-web.png",
+      imageWidth: 500,
+      imageAlt: "Certificado del curso",
+      showConfirmButton: false,
+    });
+  });
+
+} else if (element.titulo === "Curso de JavaScript") {
+  tarjeta.addEventListener("click", () => {
+    Swal.fire({
+      imageUrl: "imagenes/certificado javaScript.png",
+      imageWidth: 500,
+      imageAlt: "Certificado del curso",
+      showConfirmButton: false,
+    });
+  });
+
+} else if (element.titulo === "Curso de React JS") {
+  tarjeta.addEventListener("click", () => {
+    Swal.fire({
+      imageUrl: "imagenes/e91427c8-694b-4257-96c7-57f93e42942f (1).png",
+      imageWidth: 500,
+      imageAlt: "Certificado del curso",
+      showConfirmButton: false,
+    });
+  });
+}
+
     const descripcion = document.createElement("p");
     descripcion.textContent = element.descripcion;
     tarjeta.classList.add("tarjeta");
