@@ -28,14 +28,19 @@ const estudios = [
     descripcion: "Coderhouse - JS moderno, DOM, eventos, funciones.",
   },
   {
-    titulo: "Lic. en Administración",
-    descripcion: "9 materias aprobadas (interrumpido).",
+    titulo: "Curso de React JS",
+    descripcion: "Coderhouse - React, componentes, hooks, SPA. (Completado)",
+  },
+  {
+    titulo: "Curso de Desarrollo de Aplicaciones",
+    descripcion: "Coderhouse - React Native, navegación, estados, mobile. (En curso)",
   },
   {
     titulo: "Secundario completo",
     descripcion: "Nuestra Sra. de la Misericordia.",
   },
 ];
+
 
 function sobreMi() {
   const contenedor = document.getElementById("sobre-mi");
