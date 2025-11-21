@@ -38,6 +38,7 @@ header {
 header p {
   color: #e6af2e;
 }
+
 .contenedor-avatar {
   margin-left: 20px;
   transform: translateX(20px);
@@ -62,12 +63,11 @@ header p {
   padding-bottom: 10px;
 }
 
-#capasitacion .tarjeta:nth-child(2) h3 {
-  color: #e6af2e;
+/* AHORA TODOS LOS TÍTULOS DE LOS CURSOS SON AMARILLOS */
+#capasitacion h3 {
+  color: #e6af2e !important;
 }
-#capasitacion .tarjeta:nth-child(3) h3 {
-  color: #e6af2e;
-}
+
 #experiencia .tarjeta:nth-child(4) h3 {
   color: #e6af2e;
 }
@@ -130,7 +130,6 @@ header p {
 .tarjeta h3 {
   font-size: 1.3rem;
   margin-bottom: 10px;
-  color: #ffffff;
   border-left: 4px solid #ffffff30;
   padding-left: 10px;
 }
@@ -190,9 +189,4 @@ header p {
   #experiencia h2 {
     font-size: 1.6rem;
   }
-}
-
-/* ⭐ AGREGADO AL FINAL — React en amarillo */
-.react-amarillo h3 {
-  color: #e6af2e !important;
 }
