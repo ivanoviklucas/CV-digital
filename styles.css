@@ -63,10 +63,23 @@ header p {
   padding-bottom: 10px;
 }
 
-/* AHORA TODOS LOS TÍTULOS DE LOS CURSOS SON AMARILLOS */
-#capasitacion h3 {
-  color: #e6af2e !important;
+/* ------------------------------- */
+/* CURSOS EN AMARILLO (solo 4)    */
+/* ------------------------------- */
+
+#capasitacion .tarjeta:nth-child(2) h3,
+#capasitacion .tarjeta:nth-child(3) h3,
+#capasitacion .tarjeta:nth-child(4) h3,
+#capasitacion .tarjeta:nth-child(5) h3 {
+  color: #e6af2e;
 }
+
+/* Dejar el SECUNDARIO en blanco */
+#capasitacion .tarjeta:nth-child(6) h3 {
+  color: #ffffff;
+}
+
+/* ------------------------------- */
 
 #experiencia .tarjeta:nth-child(4) h3 {
   color: #e6af2e;
