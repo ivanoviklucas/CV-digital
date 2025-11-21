@@ -12,11 +12,17 @@ const experiencias = [
     descripcion: "Promotor vía pública.",
   },
   {
-    titulo: "Prevención de la Ciudad (2023 hasta la actualidad)",
+    titulo: "Prevención de la Ciudad (mayo/2023 hasta Junio 2025)",
     descripcion:
       "Garantizar la seguridad y el bienestar de los ciudadanos en diferentes ámbitos.",
   },
+  {
+    titulo: "Delivery de aplicaciones móviles (Junio 2025 - Actualidad)",
+    descripcion:
+      "Repartidor independiente utilizando aplicaciones móviles para la gestión de pedidos, optimización de rutas y atención al cliente.",
+  },
 ];
+
 
 const estudios = [
   {
